@@ -6,17 +6,13 @@ namespace StaticExercise
 {
     public static class TempConverter
     {
-        public static double Fahrenheit { get; set; }
-        public static double Celcius { get; set; }
-        public static double FahrenheitToCelsius()
+        public static double FahrenheitToCelsius(double fahrenheit) // Made changes aftter exercise review
         {
-            double fahrenheit = Fahrenheit;
             double celsius = (fahrenheit - 32) / 1.8;
             return celsius;
         }
-        public static double CelsiusToFahrenheit()
+        public static double CelsiusToFahrenheit(double celcius)     // Made changes after exercise review
         {
-            double celcius = Celcius;
             double fahrenheit = (celcius * 1.8) + 32;
             return fahrenheit;
         }
